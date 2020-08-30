@@ -26,8 +26,9 @@ if __name__ == '__main__':
     load_commands(bot)
 
     # Check if an environment token exists. If not, resort to using config token
-    TOKEN = os.getenv['DISCORD_TOKEN']
+    TOKEN = os.getenv('DISCORD_TOKEN')
     if (TOKEN is None):
         TOKEN = config['token']
 
+    print(f"Starting bot using token: {TOKEN}")
     bot.run(TOKEN)
