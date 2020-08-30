@@ -1,0 +1,1 @@
+worker: python3 among_us_bot.py
