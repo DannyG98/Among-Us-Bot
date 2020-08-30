@@ -36,4 +36,4 @@ class MuteCommand(commands.Cog):
             await set_mute_status(userVoiceChannel, False)
             await send_fancy_msg(ctx.message.channel, CHANNEL_VOICE_STATUS_MSG, userVoiceChannel, "unmuted")
         except AttributeError:
-            await send_fancy_msg(ctx.message.channel, NO_SUCH_VC_MSG, ctx.message.author.mention
+            await send_fancy_msg(ctx.message.channel, NO_SUCH_VC_MSG, ctx.message.author.mention)
